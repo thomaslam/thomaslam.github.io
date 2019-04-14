@@ -6,9 +6,22 @@
     <description>Recent content on Thomas Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 14 Apr 2019 19:13:34 -0400</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Sun, 14 Apr 2019 19:13:34 -0400</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>My name is Thomas Lam. I&amp;rsquo;m a (prospective) data engineer working at Capital One based in DC.
+I&amp;rsquo;m interested in all things data science or machine learning related (and developing software in general). This website is meant to capture my journey on being a bit more knowledgeable about this vast and fascinating field.
+Occasionally you&amp;rsquo;ll find my ramblings on life, books I&amp;rsquo;ve read and general non-technical stuff.
+Feel free to reach out at tuananhlam95@gmail.</description>
+    </item>
     
   </channel>
 </rss>
