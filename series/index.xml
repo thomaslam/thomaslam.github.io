@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Thomas Lam</title>
-    <link>http://example.org/categories/</link>
-    <description>Recent content in Categories on Thomas Lam</description>
+    <title>Series on Thomas Lam</title>
+    <link>http://example.org/series/</link>
+    <description>Recent content in Series on Thomas Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
     
-	<atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/series/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
