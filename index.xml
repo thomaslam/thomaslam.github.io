@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thomas Lam</title>
-    <link>http://example.org/</link>
+    <link>https://thomaslam.github.io/</link>
     <description>Recent content on Thomas Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
     <lastBuildDate>Sun, 14 Apr 2019 19:13:34 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thomaslam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://example.org/about/</link>
+      <link>https://thomaslam.github.io/about/</link>
       <pubDate>Sun, 14 Apr 2019 19:13:34 -0400</pubDate>
       
-      <guid>http://example.org/about/</guid>
+      <guid>https://thomaslam.github.io/about/</guid>
       <description>My name is Thomas Lam. I&amp;rsquo;m a (prospective) data engineer working at Capital One based in DC.
 I&amp;rsquo;m interested in all things data science or machine learning related (and developing software in general). This website is meant to capture my journey on being a bit more knowledgeable about this vast and fascinating field.
 Occasionally you&amp;rsquo;ll find my ramblings on life, books I&amp;rsquo;ve read and general non-technical stuff.
