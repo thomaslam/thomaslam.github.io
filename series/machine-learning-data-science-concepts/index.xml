@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning &amp; Data Science concepts on Thomas Lam</title>
+    <link>https://thomaslam.github.io/series/machine-learning-data-science-concepts/</link>
+    <description>Recent content in Machine Learning &amp; Data Science concepts on Thomas Lam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
+    <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thomaslam.github.io/series/machine-learning-data-science-concepts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intro to ML and Data Science</title>
+      <link>https://thomaslam.github.io/post/intro-to-ml-and-data-science/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomaslam.github.io/post/intro-to-ml-and-data-science/</guid>
+      <description>In this introductory post, I introduce what Machine Learning is in hopefully a widely accessible language. I aim to minimize as many buzzwords as possible though certain terminologies such as matrices, vectors, statistical models, parameters, etc. will come up. A basic understanding of what these terms mean is assumed.
+What is Machine Learning? According to computer scientist Arthur Samuel in 1959, Machine Learning is a subfield of Computer Science that gives “computers the ability to learn without being explicitly programmed.</description>
+    </item>
+    
+  </channel>
+</rss>
