@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Thomas Lam</title>
-    <link>https://thomaslam.github.io/post/</link>
-    <description>Recent content in Posts on Thomas Lam</description>
+    <title>Weekly Digests on Thomas Lam</title>
+    <link>https://thomaslam.github.io/series/weekly-digests/</link>
+    <description>Recent content in Weekly Digests on Thomas Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
     <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://thomaslam.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thomaslam.github.io/series/weekly-digests/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,16 +24,6 @@ News  Notre Dame fire
  Sri Lanka Easter bombings
  Mueller report
  TLDR: found no conclusive evidence of Trump admin&amp;rsquo;s collusion with Russia; showed instances of Trump clearly frustrated about the investigation and tried to manipulate the justice system in many ways  Verge&amp;rsquo;s coverage of Andrew Yang</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>https://thomaslam.github.io/post/first-post/</link>
-      <pubDate>Mon, 15 Apr 2019 17:25:02 -0400</pubDate>
-      
-      <guid>https://thomaslam.github.io/post/first-post/</guid>
-      <description>Keeping a consistent blogging schedule has always been a challenge for me. Hopefully this time, I manage to get a few blog posts in before eventually life (and my procrastination tendency) kicks in. The purpose of this blog is to consolidate my thoughts on what I have learned on my journey in becoming a better software engineer/Machine Learning practitioner.
-So yes most of my content is technical in nature. However, I do plan to write blog posts that are more mundane (book reviews, weekly digests of interesting reads and general reflections on life lessons).</description>
     </item>
     
   </channel>

@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
-    <lastBuildDate>Mon, 15 Apr 2019 17:25:02 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://thomaslam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Weekly Digest 1</title>
+      <link>https://thomaslam.github.io/post/weekly-digest-1/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomaslam.github.io/post/weekly-digest-1/</guid>
+      <description>Week 04/15 - 04/21
+This is the first post of my weekly blog series on interesting things I&amp;rsquo;ve read/listened. I also try to keep myself accountable in terms of self education by including the What I am working on section at the end.
+News  Notre Dame fire
+ Sri Lanka Easter bombings
+ Mueller report
+ TLDR: found no conclusive evidence of Trump admin&amp;rsquo;s collusion with Russia; showed instances of Trump clearly frustrated about the investigation and tried to manipulate the justice system in many ways  Verge&amp;rsquo;s coverage of Andrew Yang</description>
+    </item>
     
     <item>
       <title>First Post</title>
@@ -19,7 +33,7 @@
       
       <guid>https://thomaslam.github.io/post/first-post/</guid>
       <description>Keeping a consistent blogging schedule has always been a challenge for me. Hopefully this time, I manage to get a few blog posts in before eventually life (and my procrastination tendency) kicks in. The purpose of this blog is to consolidate my thoughts on what I have learned on my journey in becoming a better software engineer/Machine Learning practitioner.
-So yes most of my content is technical in nature. However, I do plan to write blog posts that are more mundane (book reviews, weekly digests of interesting reads and general reflections on life lessons)</description>
+So yes most of my content is technical in nature. However, I do plan to write blog posts that are more mundane (book reviews, weekly digests of interesting reads and general reflections on life lessons).</description>
     </item>
     
     <item>
@@ -30,7 +44,7 @@ So yes most of my content is technical in nature. However, I do plan to write bl
       <guid>https://thomaslam.github.io/about/</guid>
       <description>My name is Thomas Lam. I&amp;rsquo;m a (prospective) data engineer working at Capital One based in DC.
 I&amp;rsquo;m interested in all things data science or machine learning related (and developing software in general). This website is meant to capture my journey on being a bit more knowledgeable about this vast and fascinating field.
-Occasionally you&amp;rsquo;ll find my ramblings on life, books I&amp;rsquo;ve read and general non-technical stuff.
+Occasionally here you&amp;rsquo;ll find my ramblings on life, books I&amp;rsquo;ve read and general non-technical stuff.
 Feel free to reach out at tuananhlam95@gmail.</description>
     </item>
     

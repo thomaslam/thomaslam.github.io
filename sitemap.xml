@@ -3,20 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thomaslam.github.io/post/first-post/</loc>
-    <lastmod>2019-04-15T17:25:02-04:00</lastmod>
+    <loc>https://thomaslam.github.io/post/</loc>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://thomaslam.github.io/post/</loc>
-    <lastmod>2019-04-15T17:25:02-04:00</lastmod>
+    <loc>https://thomaslam.github.io/series/</loc>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://thomaslam.github.io/</loc>
-    <lastmod>2019-04-15T17:25:02-04:00</lastmod>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomaslam.github.io/post/weekly-digest-1/</loc>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thomaslam.github.io/series/weekly-digests/</loc>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomaslam.github.io/post/first-post/</loc>
+    <lastmod>2019-04-15T17:25:02-04:00</lastmod>
   </url>
   
   <url>
@@ -26,11 +43,6 @@
   
   <url>
     <loc>https://thomaslam.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomaslam.github.io/series/</loc>
     <priority>0</priority>
   </url>
   
