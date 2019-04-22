@@ -162,8 +162,15 @@ if (!doNotTrack) {
 <li><p><a href="https://dataskeptic.com/blog/episodes/2019/word2vec">Data Skeptic: word2vec</a></p>
 
 <ul>
-<li>What it is: a neural network model that guesses a hidden word based on context (words appearing before and after); takes as input large text corpus and produces vector space where each unique word in corpus is assigned a vector in space</li>
+<li>What it is: a neural network model that guesses a hidden word based on context (words appearing before and after); takes as input large text corpus and produces vector space where each unique word in corpus is assigned a vector in space such that related words are closer in this space compared to non-related words (e.g. carrot and orange are close compared to carrot and George Washington)</li>
 <li>Foundational NLP technique, used by big tech companies for various NLP-related products</li>
+<li>What is it used for: as feature engineering step to preprocess input for other ML models; for improving query search (find results for similar phrases)</li>
+<li>Interesting notes:
+
+<ul>
+<li>in word2vec&rsquo;s representation, king - male + female = queen</li>
+<li>doctor - male + female = nurse (sexist bias in datasets that word2vec is trained on)</li>
+</ul></li>
 <li><strong>Note-to-self</strong>: write an in-depth blog post</li>
 </ul></li>
 
