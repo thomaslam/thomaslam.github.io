@@ -29,7 +29,7 @@ In this blog post, I&amp;rsquo;m going to show how to derive the gradient (vecto
       
       <guid>https://thomaslam.github.io/post/logistic-regression-explained/</guid>
       <description>Logistic regression is one of the most famous ML models used in supervised learning settings. Despite the term &amp;ldquo;regression&amp;rdquo; in its name, this model is mostly used for classification tasks. An important distinction between logistic regression and another very popular supervised learning model, linear regression, is that the response variable is categorical for the former but continuous for the latter.
-Most ML researchers use this model as a baseline in many supervised learning tasks despite its simplicity.</description>
+Most ML researchers use this model as a baseline in many supervised learning tasks because of its simplicity.</description>
     </item>
     
     <item>
