@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
-    <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://thomaslam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deriving cross-entropy loss gradient</title>
+      <link>https://thomaslam.github.io/post/deriving-cross-entropy-loss-gradient/</link>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomaslam.github.io/post/deriving-cross-entropy-loss-gradient/</guid>
+      <description>Note: This post assumes familiarity of vector notations and strong knowledge of (partial) derivatives which is covered in a Multivariable Calculus class.
+In this blog post, I&amp;rsquo;m going to show how to derive the gradient (vector of partial derivatives) of the cost function for logistic regression (also known as cross entropy loss). This is an important part of backpropagation step/gradient descent algorithm in training logistic regression model (which I have explained in an earlier blog post) as in order to update the model parameters, we need to know the gradient of the cost function with respect to them.</description>
+    </item>
+    
+    <item>
+      <title>Logistic regression explained</title>
+      <link>https://thomaslam.github.io/post/logistic-regression-explained/</link>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomaslam.github.io/post/logistic-regression-explained/</guid>
+      <description>Logistic regression is one of the most famous ML models used in supervised learning settings. Despite the term &amp;ldquo;regression&amp;rdquo; in its name, this model is mostly used for classification tasks. An important distinction between logistic regression and another very popular supervised learning model, linear regression, is that the response variable is categorical for the former but continuous for the latter.
+Most ML researchers use this model as a baseline in many supervised learning tasks despite its simplicity.</description>
+    </item>
     
     <item>
       <title>Machine Learning: an overview</title>

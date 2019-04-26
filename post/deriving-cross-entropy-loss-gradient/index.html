@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="Deriving cross-entropy loss gradient" />
+<meta property="og:site_name" content="Thomas Lam" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://thomaslam.github.io/post/deriving-cross-entropy-loss-gradient/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2019-04-26
+" /> <meta property="article:modified_time" content="2019-04-26
+" />
+
+
+
+
+
+
+    <title>Deriving cross-entropy loss gradient</title>
+    <link rel="canonical" href="https://thomaslam.github.io/post/deriving-cross-entropy-loss-gradient/" />
+
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="https://thomaslam.github.io/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-XXXXXXXXX-X', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-80-m w-60-ns center mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a href="https://thomaslam.github.io/" class="b bb bw1 pb1 no-underline black">Thomas Lam</a>
+  <span class="b"> / </span>
+  <a href="/post" class="b bb bw1 pb1 no-underline black">blog</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">Deriving cross-entropy loss gradient</h1>
+    <span class="f6 gray">April 26, 2019</span>
+
+      <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        <p><strong>Note</strong>: This post assumes familiarity of vector notations and strong knowledge of (partial) derivatives which is covered in a Multivariable Calculus class.</p>
+
+<p>In this blog post, I&rsquo;m going to show how to derive the gradient (vector of partial derivatives) of the cost function for logistic regression (also known as <a href="https://en.wikipedia.org/wiki/Cross_entropy">cross entropy loss</a>). This is an important part of backpropagation step/gradient descent algorithm in training logistic regression model (which I have explained in an earlier <a href="https://thomaslam.github.io/post/logistic-regression-explained/">blog post</a>) as in order to update the model parameters, we need to know the gradient of the cost function with respect to them.</p>
+
+<p>The cost function of interest is of the following form:</p>
+
+<p>$$
+J(w, b) = \frac{-1}{m}\sum_{i=1}^{m}y^{(i)}log(a^{(i)}) + (1-y^{(i)})log(1-a^{(i)})
+$$</p>
+
+<p>where $m$ is the number of samples in training data set, $y^{(i)}$ is ground truth label for training sample $i$, $w$ (a 1-D vector of same dimension as input (column) vectors $x^{(i)}$&rsquo;s) and $b$ (a scalar denoting bias) are model parameters that we&rsquo;re trying to find partial derivatives of the cost function above with respect to (w.r.t.), $a^{(i)}$ is the output of sigmoid function $\sigma$ (which is the activation function used in logistic regression model):</p>
+
+<p>$$
+\begin{aligned}
+    \text{(1)} \quad a^{(i)} &amp;= \sigma (z^{(i)}) = \frac{1}{1+e^{-z^{(i)}}} \newline
+    \text{(2)} \quad z^{(i)} &amp;= w^Tx^{(i)} + b
+\end{aligned}
+$$</p>
+
+<p>It is important to remember that $y^{(i)}$&rsquo;s and $x^{(i)}$&rsquo;s are given and hence can be treated as constants. In other words, $w$ and $b$ are the only variables we need to worry about.</p>
+
+<p>So the gradient/partial derivatives we&rsquo;re interested in computing are:</p>
+
+<p>$$
+\nabla J = \begin{bmatrix}
+    \frac{\partial J}{\partial w} \newline
+    \frac{\partial J}{\partial b}
+    \end{bmatrix}
+$$</p>
+
+<p>Let&rsquo;s first start with computing the gradient for cross entropy loss for a single sample:</p>
+
+<p>$$
+\ell (w, b) = y*log(a) + (1-y)*log(1-a)
+$$</p>
+
+<p><em>Note</em>: I drop the superscript (i)&rsquo;s for simplicity</p>
+
+<p>From calculus, we know we can find the derivative of a composite function by &ldquo;chaining&rdquo; derivatives of functions that it is composed of (aka <a href="https://en.wikipedia.org/wiki/Chain_rule">chain rule</a>)</p>
+
+<p>For partial derivative of $\ell$ w.r.t. $w$, chain rule is applied as follows</p>
+
+<p>$$
+\text{(3)} \quad \frac{\partial \ell}{\partial w} = \frac{\partial \ell}{\partial a} * \frac{\partial a}{\partial z} * \frac{\partial z}{\partial w}
+$$</p>
+
+<p>where $\frac{\partial a}{\partial z}$ is derivative of equation (1) where $a$ is function of variable $z$, $\frac{\partial z}{\partial w}$ is (partial) derivative of equation (2) where $z$ is a linear function of two variables $w$ and $b$</p>
+
+<p>Let&rsquo;s compute these partial derivatives</p>
+
+<p>$$
+\begin{aligned}
+    \text{(4)} \quad \frac{\partial \ell}{\partial a} &amp;= (y*log(a) + (1-y)*log(1-a))^{\prime} \newline
+    &amp;= \frac{y}{a} + \frac{-(1-y)}{1-a} \quad \text{(using derivative of log)} \newline
+    &amp;= \frac{y-a}{a(1-a)}
+    \newline
+    \newline
+    \text{(5)} \quad \frac{\partial a}{\partial z} &amp;= (\frac{1}{1+e^{-z}})^{\prime} \newline
+    &amp;= \frac{e^{-z}}{(1+e^{-z})^2} \quad \text{(using derivative of fraction and exponential)} \newline
+    &amp;= \frac{1}{1+e^{-z}} (\frac{1+e^{-z}-1}{1+e^{-z}}) \newline
+    &amp;= \frac{1}{1+e^{-z}} (1 - \frac{1}{1+e^{-z}}) \newline
+    &amp;= a(1-a)
+    \newline
+    \newline
+    \text{(6)} \quad \frac{\partial z}{\partial w} &amp;= (w^Tx+b)^{\prime} \newline
+    &amp;= x
+\end{aligned}
+$$</p>
+
+<p>Putting (4), (5) and (6) together to compute (3)</p>
+
+<p>$$
+\begin{aligned}
+\frac{\partial \ell}{\partial w} &amp;= \frac{y-a}{a(1-a)} * a(1-a) * x \newline
+&amp;= (y-a)x
+\end{aligned}
+$$</p>
+
+<p>Similarly for $\frac{\partial \ell}{\partial b} = y-a$ (since $\frac{\partial z}{\partial b}=1$)</p>
+
+<p>Going back to our original overal cost function over all samples, we can now compute its gradient as follows</p>
+
+<p>$$
+\begin{aligned}
+\frac{\partial J}{\partial w} &amp;= \frac{-1}{m} \sum_{i=1}^{m} \frac{\partial \ell^{(i)}}{\partial w} \newline
+&amp;= \frac{-1}{m} \sum (y^{(i)} - a^{(i)})x^{(i)} \newline
+\end{aligned}
+$$</p>
+
+<p>$$
+\begin{aligned}
+\frac{\partial J}{\partial b} &amp;= \frac{-1}{m} \sum_{i=1}^{m} \frac{\partial \ell^{(i)}}{\partial b} \newline
+&amp;= \frac{-1}{m} \sum (y^{(i)} - a^{(i)}) \newline
+\end{aligned}
+$$</p>
+
+<p>Here&rsquo;s how these partial derivatives (denoted by dw and db) look like in logistic regression model implementation in python (using numpy arrays) from scratch</p>
+
+<pre><code class="language-python">def propagate(W, b, X, Y):
+  # Forward pass
+  num_samples = X.shape[0]
+  A = sigmoid(np.dot(X, W) + b)
+  cost = -1/num_samples * np.sum(Y*np.log(A) + (1-Y)*np.log(1-A))
+
+  # Backward pass
+  dw = 1/m * np.dot(X, (A-Y).T)
+  db = 1/m * np.sum(A-Y)
+
+  grads = {
+    &quot;dW&quot;: dW
+    &quot;db&quot;: db
+  }
+  return cost, grads
+</code></pre>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+      </article>
+
+      
+      <span class="f6 gray mv3" title="Lastmod: April 26, 2019. Published at: 2019-04-26.">
+        
+      </span>
+
+      
+        <section class="mt4">
+          
+          
+          <h3>👋 Related posts in the <a href="/series/machine-learning-data-science-concepts" class="b bb bw1 pb1 no-underline black">Machine Learning &amp; Data Science concepts</a> series...</h3>
+      
+          
+         
+          
+            <ul class="list pl0">
+              
+                <li class="list pl0 lh-copy">
+                  <a
+                    class="f4 b dib black no-underline"
+                    href="https://thomaslam.github.io/post/logistic-regression-explained/"
+                    >Logistic regression explained</a
+                  >
+                  <span class="f6 gray">April 26, 2019</span>
+                </li>
+              
+                <li class="list pl0 lh-copy">
+                  <a
+                    class="f4 b dib black no-underline"
+                    href="https://thomaslam.github.io/post/machine-learning-an-overview/"
+                    >Machine Learning: an overview</a
+                  >
+                  <span class="f6 gray">April 22, 2019</span>
+                </li>
+              
+            </ul>  
+          
+        </section>
+      
+
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © 2016-19 <a href='https://github.com/siegerts/hugo-theme-basic'>Hugo Theme Basic</a>. Made by <a href='https://twitter.com/siegerts'>@siegerts</a>.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  </body>
+</html>
