@@ -37,6 +37,17 @@
   </url>
   
   <url>
+    <loc>https://thomaslam.github.io/post/weekly-digest-2/</loc>
+    <lastmod>2019-04-22T15:44:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thomaslam.github.io/series/weekly-digests/</loc>
+    <lastmod>2019-04-22T15:44:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://thomaslam.github.io/post/machine-learning-an-overview/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
   </url>
@@ -44,12 +55,6 @@
   <url>
     <loc>https://thomaslam.github.io/post/weekly-digest-1/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thomaslam.github.io/series/weekly-digests/</loc>
-    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
