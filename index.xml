@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
-    <lastBuildDate>Sun, 14 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://thomaslam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reads</title>
+      <link>https://thomaslam.github.io/reads/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomaslam.github.io/reads/</guid>
+      <description>This page lists books I have read (recently in 2019), related notes as well as books I&amp;rsquo;m currently working on
+TODO: consolidate this page into a web app similar to highlights.sawyerh.com with following functionalities: visually track progress, summary stats (what genres read, ratings, notes, highlights)
+Books I&amp;rsquo;m reading  Deep Work - Cal Newport (24%)
+ Modern Romance - Aziz Ansari (16%)
+ The Three-body Problem - Liu Cixin (5%)</description>
+    </item>
     
     <item>
       <title>Weekly Digest 3</title>
