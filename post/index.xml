@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
-    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://thomaslam.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Book Notes: &#39;AI Superpowers&#39; by Kai-Fu Lee</title>
+      <link>https://thomaslam.github.io/post/book-notes-ai-superpowers-by-kai-fu-lee/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomaslam.github.io/post/book-notes-ai-superpowers-by-kai-fu-lee/</guid>
+      <description>Notes  Alpha Go vs Ke Jie in 2017 was China&amp;rsquo;s Sputnik moment inspiring Chinese gov. + startup entrepreneurs + VC investors to put huge effort into ramping up Chinese AI ecosystem (R&amp;amp;D + commercial + military)
+ Feb 2019 article to understand Chinese AI strategy  Chinese startup world is extremely cut-throat, contrasts sharply with more &amp;ldquo;tame&amp;rdquo; SV ecosystem
+ Copying other startups&amp;rsquo; unique features is acceptable Work life balance is non-existent Startups must find ways to differentiate themselves from others even if it means under-handed tactics are used  China vs US in battle for global AI dominance in coming decades: each has their own adv/disadv.</description>
+    </item>
     
     <item>
       <title>Weekly Digest 4</title>
@@ -47,7 +58,8 @@ News  Melinda Gates&amp;rsquo; new book on women empowerment as means to lift up
       <description>This is my planned learning roadmap of online courses covering topics I&amp;rsquo;m interested in exploring related to ML.
 My goal is to complete most of these by my 25th birthday on July 4, 2020.
 Update 7-10-19:  Added more courses that are just released by Udacity and Coursera (Data Engineer Nanodegree and Tensorflow Specialization)
- Coursera&amp;rsquo;s Machine Learning (Andrew Ng) Coursera&amp;rsquo;s Deep Learning Specialication (Andrew Ng):  Neural Networks and Deep Learning Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (IN PROGRESS) Structuring Machine Learning Projects Convolutional Neural Networks Sequence Models (IN PROGRESS)  Coursera&amp;rsquo;s Tensorflow in Practice Specialization fast.</description>
+Update 7-22-19:  Finished Sequence Models course
+ Coursera&amp;rsquo;s Machine Learning (Andrew Ng) Coursera&amp;rsquo;s Deep Learning Specialication (Andrew Ng):  Neural Networks and Deep Learning Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (IN PROGRESS) Structuring Machine Learning Projects (IN PROGRESS) Convolutional Neural Networks (IN PROGRESS) Sequence Models  Coursera&amp;rsquo;s Tensorflow in Practice Specialization fast.</description>
     </item>
     
     <item>

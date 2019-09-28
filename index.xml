@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
-    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://thomaslam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Book Notes: &#39;AI Superpowers&#39; by Kai-Fu Lee</title>
+      <link>https://thomaslam.github.io/post/book-notes-ai-superpowers-by-kai-fu-lee/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomaslam.github.io/post/book-notes-ai-superpowers-by-kai-fu-lee/</guid>
+      <description>Notes  Alpha Go vs Ke Jie in 2017 was China&amp;rsquo;s Sputnik moment inspiring Chinese gov. + startup entrepreneurs + VC investors to put huge effort into ramping up Chinese AI ecosystem (R&amp;amp;D + commercial + military)
+ Feb 2019 article to understand Chinese AI strategy  Chinese startup world is extremely cut-throat, contrasts sharply with more &amp;ldquo;tame&amp;rdquo; SV ecosystem
+ Copying other startups&amp;rsquo; unique features is acceptable Work life balance is non-existent Startups must find ways to differentiate themselves from others even if it means under-handed tactics are used  China vs US in battle for global AI dominance in coming decades: each has their own adv/disadv.</description>
+    </item>
     
     <item>
       <title>Weekly Digest 4</title>
@@ -30,11 +41,9 @@ News  Amazon:
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://thomaslam.github.io/reads/</guid>
-      <description>This page lists books I have read (recently in 2019), related notes as well as books I&amp;rsquo;m currently working on
+      <description>This page lists books I have read (recently in 2019), related notes as well as books I&amp;rsquo;m currently working on. Books I have started but I haven&amp;rsquo;t got a chance to
 TODO: consolidate this page into a web app similar to highlights.sawyerh.com with following functionalities: visually track progress, summary stats (what genres read, ratings, notes, highlights)
-Books I&amp;rsquo;m reading  Deep Work - Cal Newport (24%)
- Modern Romance - Aziz Ansari (16%)
- The Three-body Problem - Liu Cixin (5%)</description>
+Books I&amp;rsquo;m (actively) reading  Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy - Cathy O&amp;rsquo;Neal (8%) Educated: A Memoir - Tara Westover (4%) Modern Romance - Aziz Ansari (16%)</description>
     </item>
     
     <item>
@@ -60,7 +69,8 @@ News  Melinda Gates&amp;rsquo; new book on women empowerment as means to lift up
       <description>This is my planned learning roadmap of online courses covering topics I&amp;rsquo;m interested in exploring related to ML.
 My goal is to complete most of these by my 25th birthday on July 4, 2020.
 Update 7-10-19:  Added more courses that are just released by Udacity and Coursera (Data Engineer Nanodegree and Tensorflow Specialization)
- Coursera&amp;rsquo;s Machine Learning (Andrew Ng) Coursera&amp;rsquo;s Deep Learning Specialication (Andrew Ng):  Neural Networks and Deep Learning Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (IN PROGRESS) Structuring Machine Learning Projects Convolutional Neural Networks Sequence Models (IN PROGRESS)  Coursera&amp;rsquo;s Tensorflow in Practice Specialization fast.</description>
+Update 7-22-19:  Finished Sequence Models course
+ Coursera&amp;rsquo;s Machine Learning (Andrew Ng) Coursera&amp;rsquo;s Deep Learning Specialication (Andrew Ng):  Neural Networks and Deep Learning Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (IN PROGRESS) Structuring Machine Learning Projects (IN PROGRESS) Convolutional Neural Networks (IN PROGRESS) Sequence Models  Coursera&amp;rsquo;s Tensorflow in Practice Specialization fast.</description>
     </item>
     
     <item>
@@ -133,7 +143,7 @@ So yes most of my content is technical in nature. However, I do plan to write bl
       <pubDate>Sun, 14 Apr 2019 19:13:34 -0400</pubDate>
       
       <guid>https://thomaslam.github.io/about/</guid>
-      <description>My name is Thomas Lam. I&amp;rsquo;m a (prospective) data engineer working at Capital One based in McClean, VA.
+      <description>My name is Thomas Lam. I&amp;rsquo;m a software engineer working at Capital One based in McClean, VA.
 I&amp;rsquo;m interested in all things data science or machine learning related (and developing software in general). This website is meant to capture my journey on being a bit more knowledgeable about this vast and fascinating field.
 Occasionally here you&amp;rsquo;ll find my collections/ramblings on books/articles/media I&amp;rsquo;ve consumed and other general non-technical stuff.
 Feel free to reach out at tuananhlam95@gmail.</description>

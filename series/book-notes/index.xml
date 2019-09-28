@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book Notes on Thomas Lam</title>
+    <link>https://thomaslam.github.io/series/book-notes/</link>
+    <description>Recent content in Book Notes on Thomas Lam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2016-19 &lt;a href=&#39;https://github.com/siegerts/hugo-theme-basic&#39;&gt;Hugo Theme Basic&lt;/a&gt;. Made by &lt;a href=&#39;https://twitter.com/siegerts&#39;&gt;@siegerts&lt;/a&gt;.</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thomaslam.github.io/series/book-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Book Notes: &#39;AI Superpowers&#39; by Kai-Fu Lee</title>
+      <link>https://thomaslam.github.io/post/book-notes-ai-superpowers-by-kai-fu-lee/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomaslam.github.io/post/book-notes-ai-superpowers-by-kai-fu-lee/</guid>
+      <description>Notes  Alpha Go vs Ke Jie in 2017 was China&amp;rsquo;s Sputnik moment inspiring Chinese gov. + startup entrepreneurs + VC investors to put huge effort into ramping up Chinese AI ecosystem (R&amp;amp;D + commercial + military)
+ Feb 2019 article to understand Chinese AI strategy  Chinese startup world is extremely cut-throat, contrasts sharply with more &amp;ldquo;tame&amp;rdquo; SV ecosystem
+ Copying other startups&amp;rsquo; unique features is acceptable Work life balance is non-existent Startups must find ways to differentiate themselves from others even if it means under-handed tactics are used  China vs US in battle for global AI dominance in coming decades: each has their own adv/disadv.</description>
+    </item>
+    
+  </channel>
+</rss>
